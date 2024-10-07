@@ -176,4 +176,4 @@ if __name__ == '__main__':
     args = parser.parse_args()
     achievements = vdf2json(file2lines(args.vdf))
     cookies = cookies2dict(args.cookies)
-    stm2vk(achievements, args.game_id, args.csrf, args.csrf_jwt, args.cookies)
+    stm2vk(achievements, args.game_id, args.csrf, args.csrf_jwt, cookies)
